@@ -1,0 +1,31 @@
+body {
+    background-color: darkgrey;
+}
+
+.header-div {
+    background-color: black;
+}
+
+.nav-bar-home {
+    display: inline-block;
+    background-color: gray;
+    margin-left: -40px;
+    padding: 25px;
+}
+
+.nav-bar-items {
+    display: inline-block;
+    background-color: gray;
+    padding: 10px;
+    margin-left: 25px;
+}
+
+.home-link {
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.small-links {
+    font-size: 24px;
+    text-decoration: none;
+}
