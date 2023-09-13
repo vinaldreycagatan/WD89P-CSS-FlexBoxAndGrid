@@ -1,31 +1,31 @@
-body {
-    background-color: darkgrey;
+a, a:active, ul, li {
+    text-decoration: none;
 }
 
-.header-div {
-    background-color: black;
-}
+.nav-bar-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    background-color: #2196F3;
+  }
 
-.nav-bar-home {
-    display: inline-block;
-    background-color: gray;
-    margin-left: -40px;
-    padding: 25px;
-}
-
-.nav-bar-items {
-    display: inline-block;
-    background-color: gray;
-    padding: 10px;
-    margin-left: 25px;
+.nav-bar-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    text-align: center;
+    padding: 0;
 }
 
 .home-link {
-    font-size: 50px;
-    text-decoration: none;
+    font-family: 'DM Serif Display', serif;
+
 }
 
-.small-links {
-    font-size: 24px;
-    text-decoration: none;
+.first-row {
+    font-size: 50px;
+}
+
+.nav-item {
+    font-family: 'Paytone One', sans-serif;
+    padding: 32px 0 0 0;
 }
