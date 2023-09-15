@@ -1,31 +1,202 @@
-a, a:active, ul, li {
-    text-decoration: none;
+body {
+    margin: 0;
+    background-color: #f7e3b7;
 }
 
-.nav-bar-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto;
-    background-color: #2196F3;
-  }
+a, a:active {
+    font-family: 'Gloock', serif;
+    font-size: 32px;
+    text-decoration: none;
+    color: #cd6f32;
+}
 
-.nav-bar-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    font-size: 30px;
-    text-align: center;
-    padding: 0;
+a:hover {
+    color: #d78c5b;
+}
+
+/* HEADER NAV BAR */
+
+.header-bar {
+    height: auto;
+    display: flex;
+    grid-template-columns: auto auto auto auto auto;
+    /* background-color: #2196F3; */
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    background-color: #f1d189;
+    padding: 0 250px 0 250px;
+}
+
+.logo-item {
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    flex-grow: 10;
 }
 
 .home-link {
-    font-family: 'DM Serif Display', serif;
-
-}
-
-.first-row {
-    font-size: 50px;
+    height: 100px;
 }
 
 .nav-item {
-    font-family: 'Paytone One', sans-serif;
-    padding: 32px 0 0 0;
+    flex-grow: 1;
+    text-align: center;
+    padding-top: 30px;
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+}
+
+/* LANDING PAGE */
+
+.landing-page {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    text-align: center;
+    /* background-color: green; */
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 175px 0 40px 0;
+}
+
+.greetings-text-1 {
+    grid-row: 1;
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    /* text-align: center; */
+}
+
+.greetings-text-2 {
+    grid-row: 2;
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    /* text-align: center; */
+}
+
+.your-day-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 170px;
+    color: #d78c5b;
+    margin: 0;
+    /* text-align: center; */
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+}
+
+.productive-text {
+    font-family: 'Borel', cursive;
+    font-size: 220px;
+    color: #cd6f32;
+    margin: 0;
+    /* text-align: center; */
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+
+    /* text-transform: uppercase; */
+  background-image: linear-gradient(
+    225deg,
+    #cd6f32 0%,
+    /* #44107a 29%,
+    #ff1361 67%, */
+    #f7e3b7 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #f7e3b7;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+    to {
+      background-position: -200% center;
+    }
+  }
+
+  /* SERVICES PAGE */
+
+.laundry-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    background-color: #f1d189;
+    padding: 0 0 55px 0;
+}
+
+.container-item-1 {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 50px 0 50px 50px;
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    text-align: center;
+    width: 560px;
+    /* background-color:red; */
+}
+
+.laundry-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 78px;
+    color: #d78c5b;
+    margin: 0;
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+}
+
+.container-item-2 {
+    grid-column: 1;
+    grid-row: 2;
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    text-align: left;
+    padding: 0 0 0 50px;
+    width: 560px;
+    /* background-color:green; */
+}
+
+.container-item-3 {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    /* border: 3px solid rgba(0, 0, 0, 0.8); */
+    /* background-color:yellow; */
+}
+
+.menu-img {
+    /* padding: 20px; */
+    height: 720px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 50px 50px 50px 0;
+    column-gap: 30px;
+    row-gap: 100px;
+}
+
+.gallery-item {
+    /* background-color: red; */
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    text-align: center;
+    margin: auto;
+}
+
+.laundry-img {
+    width: 280px;
+}
+
+.cafe-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    /* background-color: #f1d189; */
+    padding: 0 0 55px 0;
+}
+
+/* CONTACT US */
+
+.copyright {
+    text-align: center;
+    background-color: #d78c5b;
+    font-family: 'Borel', cursive;
+    font-size: 36px;
+    color: #f7e3b7;
+    margin: 0;
+    padding: 0;
 }
